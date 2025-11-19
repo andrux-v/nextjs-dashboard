@@ -17,14 +17,16 @@ export default function Page() {
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
         <div
  className="relative w-0 h-0 border-l-15 border-r-15 border-b-26 border-l-transparent border-r-transparent border-b-black"/>
-          <p   className={`${lusitana.className} text-xl text-gray-8000 md:text-3xl md:leading-normal`}
-          ><AcmeLogo />
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
-          </p>
+          <div className="space-y-3">
+            <AcmeLogo />
+            <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
+              <strong>Welcome to Acme.</strong> This is the example for the{' '}
+              <a href="https://nextjs.org/learn/" className="text-blue-500">
+                Next.js Learn Course
+              </a>
+              , brought to you by Vercel.
+            </p>
+          </div>
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
